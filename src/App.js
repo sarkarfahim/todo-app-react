@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Component/Header";
+import Footer from "./Component/Footer";
+import Addtask from "./Component/Addtask";
+import Tasklist from "./Component/Tasklist";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper bg-gradient-to-t from-gray-800 to-sky-800  min-h-screen text-xl text-gray-100 py-10 flex flex-col">
+      <Header />
+      <Addtask />
+      <Tasklist />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
